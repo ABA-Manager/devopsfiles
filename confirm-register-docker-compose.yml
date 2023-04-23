@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  register-user-contractor:
+    ports:
+      - 7000:8000
+    image: raymelguerra/register-user-contractor
+    container_name: register-user-contractor
+  send-email:
+    ports:
+      - 7001:8000
+    image: raymelguerra/send-email
+    container_name: send-email
